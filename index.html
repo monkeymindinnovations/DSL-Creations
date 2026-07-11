@@ -1,956 +1,885 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DSL Creations | Digital Marketing Agency in Ludhiana — SEO, Ads &amp; Web Design</title>
-<meta name="description" content="DSL Creations is Ludhiana's data-driven digital marketing agency. We build websites, run SEO &amp; Google Ads, and grow revenue for brands across India. Book a free consultation.">
-<meta name="keywords" content="Digital Marketing Agency Ludhiana, SEO Company Ludhiana, Website Development Ludhiana, Google Ads Agency Ludhiana, Social Media Marketing Ludhiana, Branding Agency Ludhiana, Website Designer Ludhiana">
-<link rel="canonical" href="https://dslcreations.com/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DSL Creations - Helping Businesses Generate More Leads, More Sales, and More Revenue through SEO, Websites, Google Ads & Social Media in Ludhiana.">
+    <title>DSL Creations | Premium Digital Marketing Agency Ludhiana</title>
+    
+    <!-- Open Graph / Twitter Cards for SEO -->
+    <meta property="og:title" content="DSL Creations | Premium Digital Marketing Agency">
+    <meta property="og:description" content="Data-Driven Digital Marketing in Ludhiana.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
 
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="DSL Creations">
-<meta property="og:title" content="DSL Creations | Data-Driven Digital Marketing Agency, Ludhiana">
-<meta property="og:description" content="More leads, more sales, more revenue — through SEO, websites, Google Ads and social media. Book your free strategy call.">
-<meta property="og:url" content="https://dslcreations.com/">
-<meta property="og:locale" content="en_IN">
+    <!-- Fonts: Space Grotesk (Headings) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="DSL Creations | Digital Marketing Agency, Ludhiana">
-<meta name="twitter:description" content="Data-driven SEO, websites, Google Ads &amp; social media marketing. Grow your business with DSL Creations.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            bg: '#050B18',
+                            section: '#0D1325',
+                            primary: '#0A84FF',
+                            secondary: '#00C8FF',
+                            accent: '#9AD000',
+                            highlight: '#FFD500',
+                            text: '#FFFFFF',
+                            muted: '#B5C4D5',
+                        }
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                        'hero-glow': 'conic-gradient(from 180deg at 50% 50%, #0A84FF40 0deg, #00C8FF40 180deg, #9AD00040 360deg)',
+                    },
+                    boxShadow: {
+                        'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
+                        'glow': '0 0 20px rgba(10, 132, 255, 0.5)',
+                    }
+                }
+            }
+        }
+    </script>
 
-<!-- Schema.org LocalBusiness -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "MarketingAgency",
-  "name": "DSL Creations",
-  "image": "https://dslcreations.com/logo.png",
-  "url": "https://dslcreations.com",
-  "telephone": "+91-8699111399",
-  "email": "info@dslcreations.com",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Office No. 5, Paneshar Market, Overlock Road, Miller Ganj",
-    "addressLocality": "Ludhiana",
-    "addressRegion": "Punjab",
-    "postalCode": "141003",
-    "addressCountry": "IN"
-  },
-  "priceRange": "$$",
-  "openingHours": "Mo-Sa 10:00-19:00"
-}
-</script>
+    <!-- Custom CSS for Premium UI Effects -->
+    <style>
+        :root {
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
+        }
+        
+        body {
+            background-color: #050B18;
+            color: #FFFFFF;
+            overflow-x: hidden;
+            cursor: none; /* Custom cursor */
+        }
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Manrope:wght@500;700;800&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #050B18;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #0A84FF;
+            border-radius: 5px;
+        }
 
-<style>
-:root{
-  --primary:#0A84FF;
-  --secondary:#00C8FF;
-  --accent:#9AD000;
-  --highlight:#FFD500;
-  --bg:#050B18;
-  --section-bg:#0D1325;
-  --card-bg:rgba(255,255,255,0.06);
-  --card-border:rgba(255,255,255,0.09);
-  --text:#FFFFFF;
-  --text-2:#B5C4D5;
-  --grad-1:linear-gradient(135deg,var(--primary),var(--secondary));
-  --grad-2:linear-gradient(135deg,var(--accent),var(--secondary));
-  --grad-3:linear-gradient(135deg,var(--highlight),var(--accent));
-  --radius:20px;
-  --ease:cubic-bezier(.16,1,.3,1);
-}
-*{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-body{
-  background:var(--bg);
-  color:var(--text);
-  font-family:'Inter',sans-serif;
-  overflow-x:hidden;
-  -webkit-font-smoothing:antialiased;
-}
-img,svg{display:block;max-width:100%;}
-a{color:inherit;text-decoration:none;}
-ul{list-style:none;}
-button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
-h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;font-weight:600;line-height:1.1;letter-spacing:-0.02em;}
-.eyebrow{font-family:'Poppins',sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--secondary);display:inline-flex;align-items:center;gap:10px;margin-bottom:18px;}
-.eyebrow::before{content:'';width:26px;height:2px;background:var(--grad-1);border-radius:2px;}
-.container{max-width:1240px;margin:0 auto;padding:0 32px;}
-.section{padding:120px 0;position:relative;}
-.section-alt{background:var(--section-bg);}
-.section-head{max-width:640px;margin-bottom:64px;}
-.section-head.center{margin-left:auto;margin-right:auto;text-align:center;}
-.section-head h2{font-size:clamp(2rem,3.6vw,3rem);margin-bottom:18px;}
-.section-head p{color:var(--text-2);font-size:1.08rem;line-height:1.7;}
-.grad-text{background:var(--grad-1);-webkit-background-clip:text;background-clip:text;color:transparent;}
+        /* Typography Utilities */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Space Grotesk', sans-serif;
+            letter-spacing: -0.02em;
+        }
 
-::selection{background:var(--primary);color:#fff;}
-:focus-visible{outline:2px solid var(--secondary);outline-offset:3px;}
+        .text-gradient {
+            background: linear-gradient(135deg, #0A84FF 0%, #00C8FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .text-gradient-accent {
+            background: linear-gradient(135deg, #9AD000 0%, #FFD500 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
 
-/* reveal */
-.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease);}
-.reveal.in{opacity:1;transform:none;}
-@media (prefers-reduced-motion:reduce){
-  .reveal{opacity:1;transform:none;transition:none;}
-  *{animation-duration:.001ms !important;}
-}
+        /* Glassmorphism Classes */
+        .glass-panel {
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
 
-/* buttons */
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:10px;
-  font-family:'Poppins',sans-serif;font-weight:600;font-size:.92rem;
-  padding:16px 30px;border-radius:100px;transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .35s var(--ease);
-  white-space:nowrap;
-}
-.btn-primary{background:var(--grad-1);color:#fff;box-shadow:0 8px 30px -8px rgba(10,132,255,.55);}
-.btn-primary:hover{transform:translateY(-3px);box-shadow:0 14px 36px -8px rgba(10,132,255,.7);}
-.btn-ghost{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.16);color:#fff;backdrop-filter:blur(10px);}
-.btn-ghost:hover{background:rgba(255,255,255,.09);transform:translateY(-3px);}
-.btn-outline{border:1px solid rgba(255,255,255,.22);color:#fff;}
-.btn-outline:hover{background:rgba(255,255,255,.06);}
-.btn-sm{padding:11px 20px;font-size:.82rem;}
+        .glass-card {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
-/* NAV */
-header{
-  position:fixed;top:0;left:0;right:0;z-index:1000;
-  padding:20px 0;transition:background .4s var(--ease),padding .4s var(--ease),border-color .4s var(--ease);
-  border-bottom:1px solid transparent;
-}
-header.scrolled{
-  background:rgba(5,11,24,.75);backdrop-filter:blur(18px) saturate(150%);
-  border-bottom:1px solid rgba(255,255,255,.06);padding:14px 0;
-}
-.nav-wrap{display:flex;align-items:center;justify-content:space-between;}
-.logo{display:flex;align-items:center;gap:11px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.18rem;}
-.logo-mark{width:38px;height:38px;border-radius:11px;background:var(--grad-1);display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.05rem;color:#fff;box-shadow:0 6px 18px -4px rgba(10,132,255,.6);flex-shrink:0;}
-.nav-links{display:flex;align-items:center;gap:38px;}
-.nav-links a{font-size:.92rem;font-weight:500;color:var(--text-2);transition:color .3s;position:relative;}
-.nav-links a::after{content:'';position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--grad-1);transition:width .3s var(--ease);border-radius:2px;}
-.nav-links a:hover{color:#fff;}
-.nav-links a:hover::after{width:100%;}
-.nav-cta{display:flex;align-items:center;gap:14px;}
-.burger{display:none;width:42px;height:42px;border-radius:12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);align-items:center;justify-content:center;flex-direction:column;gap:5px;}
-.burger span{width:18px;height:2px;background:#fff;border-radius:2px;transition:.3s;}
-.mobile-menu{position:fixed;inset:0;background:rgba(5,11,24,.98);backdrop-filter:blur(20px);z-index:1100;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px;opacity:0;pointer-events:none;transition:opacity .4s var(--ease);}
-.mobile-menu.open{opacity:1;pointer-events:auto;}
-.mobile-menu a{font-family:'Space Grotesk',sans-serif;font-size:1.6rem;font-weight:600;}
-.mobile-close{position:absolute;top:26px;right:32px;width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.07);display:flex;align-items:center;justify-content:center;}
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(10, 132, 255, 0.3);
+            transform: translateY(-8px);
+            box-shadow: 0 10px 40px -10px rgba(10, 132, 255, 0.2);
+        }
 
-/* HERO */
-.hero{min-height:100vh;display:flex;align-items:center;padding:170px 0 110px;position:relative;overflow:hidden;}
-.hero-bg{position:absolute;inset:0;z-index:0;overflow:hidden;}
-.blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.35;}
-.blob1{width:520px;height:520px;background:var(--primary);top:-160px;left:-140px;animation:float1 16s ease-in-out infinite;}
-.blob2{width:460px;height:460px;background:var(--accent);bottom:-160px;right:-100px;animation:float2 19s ease-in-out infinite;}
-.blob3{width:340px;height:340px;background:var(--highlight);top:38%;right:12%;opacity:.14;animation:float1 22s ease-in-out infinite reverse;}
-@keyframes float1{0%,100%{transform:translate(0,0) scale(1);}50%{transform:translate(50px,60px) scale(1.08);}}
-@keyframes float2{0%,100%{transform:translate(0,0) scale(1);}50%{transform:translate(-40px,-50px) scale(1.1);}}
-.grid-overlay{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse 70% 60% at 50% 30%,#000 10%,transparent 75%);}
-.hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center;}
-.hero-text h1{font-size:clamp(2.5rem,4.6vw,3.9rem);margin-bottom:24px;}
-.hero-text p{font-size:1.16rem;color:var(--text-2);line-height:1.75;max-width:520px;margin-bottom:38px;}
-.hero-actions{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:46px;}
-.hero-mini-trust{display:flex;align-items:center;gap:16px;}
-.avatars{display:flex;}
-.avatars span{width:38px;height:38px;border-radius:50%;border:2px solid var(--bg);margin-left:-10px;background:var(--grad-2);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;font-family:'Space Grotesk',sans-serif;}
-.avatars span:first-child{margin-left:0;}
-.stars{color:var(--highlight);font-size:.85rem;letter-spacing:2px;margin-bottom:2px;}
-.hero-mini-trust small{color:var(--text-2);font-size:.82rem;}
+        /* Animations & Interactions */
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
 
-/* Hero visual: dashboard mockup */
-.hero-visual{position:relative;height:520px;}
-.dash-card{position:absolute;background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius);backdrop-filter:blur(22px);box-shadow:0 30px 70px -20px rgba(0,0,0,.6);}
-.dash-main{width:100%;height:390px;top:40px;left:0;padding:26px;animation:drift 9s ease-in-out infinite;}
-@keyframes drift{0%,100%{transform:translateY(0);}50%{transform:translateY(-14px);}}
-.dash-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px;}
-.dash-head .dots{display:flex;gap:6px;}
-.dash-head .dots i{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.18);}
-.dash-head span{font-size:.72rem;color:var(--text-2);font-family:'Manrope',sans-serif;}
-.chart-row{display:flex;align-items:flex-end;gap:8px;height:130px;margin:18px 0 22px;}
-.chart-row i{flex:1;border-radius:6px 6px 0 0;background:var(--grad-1);opacity:.85;animation:barrise 2.4s var(--ease) infinite alternate;}
-.chart-row i:nth-child(2n){background:var(--grad-2);animation-delay:.2s;}
-.chart-row i:nth-child(3n){background:var(--grad-3);animation-delay:.4s;}
-@keyframes barrise{from{transform:scaleY(.7);}to{transform:scaleY(1);}}
-.dash-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;}
-.dash-stats div{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:12px;}
-.dash-stats b{display:block;font-family:'Manrope',sans-serif;font-size:1.15rem;font-weight:800;}
-.dash-stats span{font-size:.68rem;color:var(--text-2);}
-.float-card{width:210px;padding:16px;display:flex;align-items:center;gap:12px;}
-.float-1{top:0;right:-18px;animation:drift 8s ease-in-out infinite .5s;}
-.float-2{bottom:14px;left:-30px;animation:drift 10s ease-in-out infinite 1s;}
-.float-ico{width:40px;height:40px;border-radius:10px;background:var(--grad-2);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-.float-card b{display:block;font-size:1rem;font-family:'Manrope',sans-serif;font-weight:800;}
-.float-card span{font-size:.7rem;color:var(--text-2);}
-.node-line{position:absolute;background:linear-gradient(90deg,transparent,rgba(0,200,255,.5),transparent);height:1px;width:120px;top:60%;left:-40px;}
+        .blob-bg {
+            position: absolute;
+            filter: blur(100px);
+            z-index: -1;
+            opacity: 0.5;
+            animation: float 10s infinite ease-in-out alternate;
+        }
 
-/* TRUST BAR */
-.trust-bar{padding:56px 0;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);}
-.trust-inner{text-align:center;}
-.trust-inner p{font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-2);margin-bottom:36px;font-family:'Poppins',sans-serif;font-weight:500;}
-.trust-stats{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;}
-.trust-stat b{display:block;font-family:'Manrope',sans-serif;font-weight:800;font-size:2.2rem;background:var(--grad-1);-webkit-background-clip:text;background-clip:text;color:transparent;}
-.trust-stat span{color:var(--text-2);font-size:.84rem;}
+        @keyframes float {
+            0% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(30px, -50px) scale(1.1); }
+            100% { transform: translate(-20px, 20px) scale(0.9); }
+        }
 
-/* SERVICES */
-.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
-.s-card{
-  background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius);
-  padding:32px 26px;backdrop-filter:blur(14px);
-  transition:transform .45s var(--ease),border-color .45s var(--ease),background .45s var(--ease);
-  position:relative;overflow:hidden;
-}
-.s-card::before{content:'';position:absolute;inset:0;background:var(--grad-1);opacity:0;transition:opacity .45s var(--ease);z-index:0;}
-.s-card:hover{transform:translateY(-8px);border-color:rgba(255,255,255,.2);}
-.s-card:hover::before{opacity:.07;}
-.s-icon{width:52px;height:52px;border-radius:14px;background:var(--grad-1);display:flex;align-items:center;justify-content:center;margin-bottom:22px;position:relative;z-index:1;box-shadow:0 10px 24px -8px rgba(10,132,255,.5);}
-.s-card:nth-child(3n+2) .s-icon{background:var(--grad-2);box-shadow:0 10px 24px -8px rgba(154,208,0,.4);}
-.s-card:nth-child(3n) .s-icon{background:var(--grad-3);box-shadow:0 10px 24px -8px rgba(255,213,0,.35);}
-.s-card h3{font-size:1.12rem;margin-bottom:10px;position:relative;z-index:1;}
-.s-card p{font-size:.9rem;color:var(--text-2);line-height:1.65;margin-bottom:20px;position:relative;z-index:1;}
-.s-link{display:inline-flex;align-items:center;gap:7px;font-size:.82rem;font-weight:600;color:var(--secondary);position:relative;z-index:1;transition:gap .3s;}
-.s-card:hover .s-link{gap:11px;}
+        /* Custom Cursor */
+        .cursor-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #0A84FF;
+            position: fixed;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            transition: width 0.2s, height 0.2s;
+        }
+        .cursor-outline {
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgba(10, 132, 255, 0.5);
+            position: fixed;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9998;
+            transform: translate(-50%, -50%);
+            transition: transform 0.1s ease-out, width 0.2s, height 0.2s, background-color 0.2s;
+        }
+        
+        /* Interactive element cursor states */
+        a:hover ~ .cursor-outline, button:hover ~ .cursor-outline {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(10, 132, 255, 0.1);
+            border-color: transparent;
+        }
 
-/* WHY CHOOSE */
-.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
-.why-card{padding:30px 24px;border-radius:18px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);text-align:left;transition:background .4s,transform .4s var(--ease);}
-.why-card:hover{background:rgba(255,255,255,.06);transform:translateY(-6px);}
-.why-num{font-family:'Manrope',sans-serif;font-weight:800;font-size:.78rem;color:var(--accent);margin-bottom:14px;letter-spacing:.06em;}
-.why-card h4{font-size:1.02rem;margin-bottom:8px;}
-.why-card p{font-size:.85rem;color:var(--text-2);line-height:1.6;}
+        /* Marquee */
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+        }
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 30s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
 
-/* PORTFOLIO */
-.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
-.p-card{border-radius:var(--radius);overflow:hidden;position:relative;border:1px solid var(--card-border);background:var(--card-bg);transition:transform .5s var(--ease);}
-.p-card:hover{transform:translateY(-8px);}
-.p-media{height:230px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
-.p-media::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(5,11,24,.9));}
-.p-mesh{position:absolute;inset:0;}
-.p-glyph{position:relative;z-index:1;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.6rem;color:rgba(255,255,255,.85);letter-spacing:-.02em;}
-.p-body{padding:22px 24px 26px;position:relative;z-index:2;margin-top:-46px;}
-.p-cat{font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--secondary);font-weight:600;margin-bottom:6px;display:block;}
-.p-body h3{font-size:1.08rem;margin-bottom:14px;}
-.p-btn{font-size:.8rem;font-weight:600;display:inline-flex;align-items:center;gap:8px;color:#fff;border-bottom:1px solid rgba(255,255,255,.3);padding-bottom:3px;}
+        /* Loader */
+        #loader {
+            position: fixed;
+            inset: 0;
+            background: #050B18;
+            z-index: 10000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.8s ease;
+        }
+        .loader-circle {
+            width: 50px;
+            height: 50px;
+            border: 3px solid rgba(255,255,255,0.1);
+            border-top-color: #0A84FF;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin { 100% { transform: rotate(360deg); } }
 
-/* TESTIMONIALS */
-.testi-wrap{position:relative;max-width:840px;margin:0 auto;}
-.testi-track{overflow:hidden;}
-.testi-slides{display:flex;transition:transform .6s var(--ease);}
-.testi-slide{min-width:100%;padding:4px;}
-.t-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:26px;padding:52px;backdrop-filter:blur(16px);text-align:center;}
-.t-stars{color:var(--highlight);font-size:1.05rem;letter-spacing:4px;margin-bottom:22px;}
-.t-quote{font-family:'Space Grotesk',sans-serif;font-size:1.28rem;font-weight:500;line-height:1.6;margin-bottom:30px;}
-.t-person{display:flex;align-items:center;justify-content:center;gap:14px;}
-.t-avatar{width:50px;height:50px;border-radius:50%;background:var(--grad-2);display:flex;align-items:center;justify-content:center;font-weight:700;font-family:'Space Grotesk',sans-serif;}
-.t-person div{text-align:left;}
-.t-person b{display:block;font-size:.95rem;}
-.t-person span{font-size:.78rem;color:var(--text-2);}
-.testi-nav{display:flex;justify-content:center;gap:10px;margin-top:32px;}
-.testi-nav button{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.2);transition:all .3s;}
-.testi-nav button.active{width:26px;border-radius:5px;background:var(--grad-1);}
-.testi-arrow{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;transition:.3s;}
-.testi-arrow:hover{background:rgba(255,255,255,.14);}
-.testi-arrow.left{left:-70px;}
-.testi-arrow.right{right:-70px;}
-@media(max-width:900px){.testi-arrow{display:none;}}
-
-/* PROCESS */
-.process-line{position:relative;}
-.process-line::before{content:'';position:absolute;top:26px;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--primary),var(--accent),var(--highlight));opacity:.35;}
-.process-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:18px;position:relative;}
-.proc-step{text-align:left;}
-.proc-dot{width:52px;height:52px;border-radius:16px;background:var(--section-bg);border:1px solid rgba(255,255,255,.14);display:flex;align-items:center;justify-content:center;margin-bottom:22px;position:relative;z-index:1;font-family:'Manrope',sans-serif;font-weight:800;color:var(--secondary);}
-.proc-step h4{font-size:.98rem;margin-bottom:8px;}
-.proc-step p{font-size:.82rem;color:var(--text-2);line-height:1.6;}
-
-/* INDUSTRIES */
-.industries-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;}
-.ind-chip{padding:26px 18px;text-align:center;border-radius:16px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);font-size:.9rem;font-weight:500;transition:.35s var(--ease);}
-.ind-chip:hover{background:rgba(255,255,255,.07);transform:translateY(-4px);border-color:rgba(255,255,255,.18);}
-
-/* STATS */
-.stats-band{background:var(--grad-1);border-radius:28px;padding:64px 40px;position:relative;overflow:hidden;}
-.stats-band::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 20%,rgba(255,255,255,.25),transparent 55%);}
-.stats-inner{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;position:relative;z-index:1;text-align:center;}
-.stats-inner b{display:block;font-family:'Manrope',sans-serif;font-weight:800;font-size:2.6rem;}
-.stats-inner span{font-size:.88rem;opacity:.9;}
-
-/* FAQ */
-.faq-list{max-width:800px;margin:0 auto;}
-.faq-item{border-bottom:1px solid rgba(255,255,255,.09);}
-.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;padding:26px 4px;text-align:left;font-family:'Space Grotesk',sans-serif;font-size:1.05rem;font-weight:500;}
-.faq-q .plus{width:26px;height:26px;flex-shrink:0;position:relative;margin-left:20px;}
-.faq-q .plus::before,.faq-q .plus::after{content:'';position:absolute;background:var(--text-2);top:50%;left:50%;transform:translate(-50%,-50%);transition:.35s var(--ease);}
-.faq-q .plus::before{width:14px;height:2px;}
-.faq-q .plus::after{width:2px;height:14px;}
-.faq-item.open .plus::after{transform:translate(-50%,-50%) rotate(90deg);opacity:0;}
-.faq-item.open .plus::before{background:var(--secondary);}
-.faq-a{max-height:0;overflow:hidden;transition:max-height .5s var(--ease);}
-.faq-a p{padding:0 4px 26px;color:var(--text-2);font-size:.94rem;line-height:1.7;max-width:680px;}
-
-/* CTA BAND */
-.cta-band{border-radius:32px;padding:80px 60px;text-align:center;position:relative;overflow:hidden;background:var(--section-bg);border:1px solid rgba(255,255,255,.08);}
-.cta-band .blob{opacity:.25;}
-.cta-band h2{font-size:clamp(2rem,4vw,3.1rem);margin-bottom:18px;position:relative;z-index:1;}
-.cta-band p{color:var(--text-2);max-width:520px;margin:0 auto 40px;position:relative;z-index:1;}
-.cta-actions{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;position:relative;z-index:1;}
-
-/* CONTACT */
-.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;}
-.contact-info{display:flex;flex-direction:column;gap:22px;}
-.info-row{display:flex;gap:16px;align-items:flex-start;background:var(--card-bg);border:1px solid var(--card-border);padding:22px;border-radius:16px;}
-.info-ico{width:44px;height:44px;border-radius:12px;background:var(--grad-1);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-.info-row b{display:block;font-size:.94rem;margin-bottom:4px;}
-.info-row span,.info-row a{font-size:.86rem;color:var(--text-2);line-height:1.6;}
-.map-frame{border-radius:16px;overflow:hidden;border:1px solid var(--card-border);height:200px;filter:grayscale(.3) invert(.9) contrast(.9);}
-.contact-form{background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius);padding:40px;backdrop-filter:blur(14px);}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
-.form-group{margin-bottom:18px;}
-.form-group label{display:block;font-size:.8rem;color:var(--text-2);margin-bottom:8px;}
-.form-group input,.form-group textarea{
-  width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);
-  border-radius:12px;padding:13px 16px;color:#fff;font-family:'Inter',sans-serif;font-size:.92rem;
-  transition:border-color .3s,background .3s;
-}
-.form-group input:focus,.form-group textarea:focus{border-color:var(--secondary);background:rgba(255,255,255,.06);outline:none;}
-.form-group textarea{resize:vertical;min-height:110px;}
-.form-note{font-size:.76rem;color:var(--text-2);margin-top:14px;text-align:center;}
-
-/* FOOTER */
-footer{padding:70px 0 30px;border-top:1px solid rgba(255,255,255,.07);}
-.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px;margin-bottom:60px;}
-.footer-brand p{color:var(--text-2);font-size:.88rem;line-height:1.7;margin:18px 0 22px;max-width:280px;}
-.social-row{display:flex;gap:10px;}
-.social-row a{width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;transition:.3s;}
-.social-row a:hover{background:var(--grad-1);}
-.footer-col h5{font-family:'Poppins',sans-serif;font-size:.86rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-bottom:20px;color:var(--text-2);}
-.footer-col ul li{margin-bottom:12px;}
-.footer-col ul li a{font-size:.9rem;color:var(--text-2);transition:color .3s;}
-.footer-col ul li a:hover{color:#fff;}
-.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:26px;border-top:1px solid rgba(255,255,255,.06);flex-wrap:wrap;gap:14px;}
-.footer-bottom p{font-size:.8rem;color:var(--text-2);}
-.footer-legal{display:flex;gap:22px;}
-.footer-legal a{font-size:.8rem;color:var(--text-2);}
-.footer-legal a:hover{color:#fff;}
-
-/* FLOATING UI */
-.whatsapp-float{
-  position:fixed;bottom:26px;right:26px;width:60px;height:60px;border-radius:50%;
-  background:#25D366;display:flex;align-items:center;justify-content:center;
-  box-shadow:0 10px 30px -6px rgba(37,211,102,.6);z-index:900;animation:pulse 2.6s infinite;
-}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5);}70%{box-shadow:0 0 0 16px rgba(37,211,102,0);}100%{box-shadow:0 0 0 0 rgba(37,211,102,0);}}
-.sticky-cta{position:fixed;bottom:0;left:0;right:0;z-index:850;background:rgba(5,11,24,.9);backdrop-filter:blur(16px);border-top:1px solid rgba(255,255,255,.08);padding:12px 20px;display:none;align-items:center;justify-content:space-between;gap:14px;}
-.sticky-cta span{font-size:.85rem;font-weight:500;}
-.back-top{position:fixed;bottom:96px;right:26px;width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:center;z-index:900;opacity:0;pointer-events:none;transition:.35s var(--ease);}
-.back-top.show{opacity:1;pointer-events:auto;}
-
-/* loader */
-#loader{position:fixed;inset:0;background:var(--bg);z-index:3000;display:flex;align-items:center;justify-content:center;transition:opacity .6s var(--ease),visibility .6s;}
-#loader.hide{opacity:0;visibility:hidden;}
-.loader-mark{width:60px;height:60px;border-radius:16px;background:var(--grad-1);display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;color:#fff;font-size:1.3rem;animation:loaderPulse 1.1s ease-in-out infinite;}
-@keyframes loaderPulse{0%,100%{transform:scale(1);opacity:1;}50%{transform:scale(.85);opacity:.6;}}
-
-/* RESPONSIVE */
-@media(max-width:1080px){
-  .hero-inner{grid-template-columns:1fr;}
-  .hero-visual{height:420px;max-width:520px;margin:0 auto;}
-  .services-grid,.why-grid{grid-template-columns:repeat(2,1fr);}
-  .portfolio-grid{grid-template-columns:repeat(2,1fr);}
-  .process-grid{grid-template-columns:repeat(3,1fr);row-gap:40px;}
-  .process-line::before{display:none;}
-  .industries-grid{grid-template-columns:repeat(3,1fr);}
-  .stats-inner{grid-template-columns:repeat(2,1fr);row-gap:30px;}
-  .contact-grid{grid-template-columns:1fr;}
-  .trust-stats{grid-template-columns:repeat(3,1fr);row-gap:24px;}
-  .footer-grid{grid-template-columns:1fr 1fr;}
-}
-@media(max-width:720px){
-  .nav-links,.nav-cta{display:none;}
-  .burger{display:flex;}
-  .section{padding:80px 0;}
-  .services-grid,.why-grid,.portfolio-grid{grid-template-columns:1fr;}
-  .process-grid{grid-template-columns:1fr 1fr;}
-  .industries-grid{grid-template-columns:repeat(2,1fr);}
-  .stats-inner{grid-template-columns:1fr 1fr;}
-  .trust-stats{grid-template-columns:repeat(2,1fr);}
-  .form-row{grid-template-columns:1fr;}
-  .footer-grid{grid-template-columns:1fr;gap:34px;}
-  .cta-band{padding:56px 26px;}
-  .sticky-cta{display:flex;}
-  body{padding-bottom:64px;}
-  .contact-form{padding:26px;}
-}
-</style>
+        /* Accordion */
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+        }
+        .accordion-active .accordion-content {
+            max-height: 200px;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        .accordion-active .accordion-icon {
+            transform: rotate(45deg);
+        }
+    </style>
 </head>
-<body>
+<body class="antialiased selection:bg-brand-primary selection:text-white relative">
 
-<div id="loader"><div class="loader-mark">DSL</div></div>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot hidden md:block"></div>
+    <div class="cursor-outline hidden md:block"></div>
 
-<!-- NAV -->
-<header id="siteHeader">
-  <div class="container nav-wrap">
-    <a href="#home" class="logo"><span class="logo-mark">DSL</span> DSL Creations</a>
-    <nav class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#about">About</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="nav-cta">
-      <a href="tel:+918699111399" class="btn btn-ghost btn-sm">Call Now</a>
-      <a href="#contact" class="btn btn-primary btn-sm">Free Consultation</a>
+    <!-- Initial Loader -->
+    <div id="loader">
+        <div class="loader-circle"></div>
     </div>
-    <button class="burger" id="burgerBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
-  </div>
-</header>
 
-<div class="mobile-menu" id="mobileMenu">
-  <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
-  <a href="#home">Home</a>
-  <a href="#services">Services</a>
-  <a href="#portfolio">Portfolio</a>
-  <a href="#about">About</a>
-  <a href="#testimonials">Testimonials</a>
-  <a href="#contact">Contact</a>
-  <a href="#contact" class="btn btn-primary" style="margin-top:10px;">Free Consultation</a>
-</div>
+    <!-- Background Blobs -->
+    <div class="blob-bg w-[500px] h-[500px] bg-brand-primary rounded-full top-[-100px] left-[-100px]"></div>
+    <div class="blob-bg w-[400px] h-[400px] bg-brand-secondary rounded-full top-[20%] right-[-50px]" style="animation-delay: -2s;"></div>
+    <div class="blob-bg w-[600px] h-[600px] bg-[#9AD00020] rounded-full bottom-[10%] left-[20%]" style="animation-delay: -4s;"></div>
 
-<!-- HERO -->
-<section class="hero" id="home">
-  <div class="hero-bg">
-    <div class="blob blob1"></div>
-    <div class="blob blob2"></div>
-    <div class="blob blob3"></div>
-    <div class="grid-overlay"></div>
-  </div>
-  <div class="container hero-inner">
-    <div class="hero-text reveal">
-      <span class="eyebrow">Digital Marketing Agency · Ludhiana</span>
-      <h1>Grow Your Business with <span class="grad-text">Data&#8209;Driven</span> Digital Marketing</h1>
-      <p>Helping businesses generate more leads, more sales, and more revenue through SEO, high-converting websites, Google Ads and social media — built on strategy, not guesswork.</p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Get Free Consultation</a>
-        <a href="tel:+918699111399" class="btn btn-ghost">Book Strategy Call</a>
-        <a href="#portfolio" class="btn btn-outline">Watch Portfolio</a>
-      </div>
-      <div class="hero-mini-trust">
-        <div class="avatars"><span>A</span><span>R</span><span>K</span><span>+</span></div>
-        <div>
-          <div class="stars">★★★★★</div>
-          <small>Rated by 100+ businesses across India</small>
+    <!-- Sticky Header -->
+    <header id="header" class="fixed w-full top-0 z-50 transition-all duration-300 py-4">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="glass-panel rounded-full px-6 py-3 flex justify-between items-center">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 bg-brand-primary rounded-lg flex items-center justify-center group-hover:rotate-12 transition-transform">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <span class="font-heading font-bold text-xl tracking-tight">DSL<span class="text-brand-primary">Creations</span></span>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="#services" class="text-sm font-medium text-brand-muted hover:text-white transition-colors">Services</a>
+                    <a href="#portfolio" class="text-sm font-medium text-brand-muted hover:text-white transition-colors">Portfolio</a>
+                    <a href="#process" class="text-sm font-medium text-brand-muted hover:text-white transition-colors">Process</a>
+                    <a href="#testimonials" class="text-sm font-medium text-brand-muted hover:text-white transition-colors">Reviews</a>
+                </nav>
+
+                <!-- CTA -->
+                <div class="hidden md:flex items-center gap-4">
+                    <a href="tel:+918699111399" class="text-sm font-medium hover:text-brand-primary transition-colors flex items-center gap-2">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        +91 8699111399
+                    </a>
+                    <a href="#contact" class="bg-brand-highlight text-black px-6 py-2 rounded-full text-sm font-bold hover:scale-105 transition-transform shadow-[0_0_15px_rgba(255,213,0,0.3)]">Book Strategy</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white p-2">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="hero-visual reveal">
-      <div class="dash-card dash-main">
-        <div class="dash-head">
-          <div class="dots"><i></i><i></i><i></i></div>
-          <span>Live Campaign Dashboard</span>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center relative z-10">
+            
+            <!-- Hero Text -->
+            <div class="text-left gs-reveal">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-brand-primary/30 bg-brand-primary/10 mb-6">
+                    <span class="w-2 h-2 rounded-full bg-brand-accent animate-pulse"></span>
+                    <span class="text-xs font-semibold tracking-wider text-brand-secondary uppercase">#1 Digital Agency in Ludhiana</span>
+                </div>
+                
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] mb-6">
+                    Grow Your Business with <br>
+                    <span class="text-gradient">Data-Driven</span><br>
+                    Digital Marketing
+                </h1>
+                
+                <p class="text-lg md:text-xl text-brand-muted mb-8 max-w-xl leading-relaxed">
+                    We help forward-thinking businesses generate more leads, sales, and revenue through precision SEO, high-converting websites, and scaling Google & Meta Ads.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="bg-brand-primary hover:bg-blue-600 text-white px-8 py-4 rounded-full font-bold text-center transition-all shadow-glow hover:scale-105 flex items-center justify-center gap-2">
+                        Get Free Consultation
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                    <a href="#portfolio" class="glass-panel text-white px-8 py-4 rounded-full font-bold text-center hover:bg-white/5 transition-all flex items-center justify-center gap-2">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                        Watch Portfolio
+                    </a>
+                </div>
+                
+                <div class="mt-10 flex items-center gap-4 text-sm text-brand-muted">
+                    <div class="flex -space-x-3">
+                        <img src="https://ui-avatars.com/api/?name=Client+1&background=0D1325&color=fff" class="w-10 h-10 rounded-full border-2 border-brand-bg" alt="Client">
+                        <img src="https://ui-avatars.com/api/?name=Client+2&background=0A84FF&color=fff" class="w-10 h-10 rounded-full border-2 border-brand-bg" alt="Client">
+                        <img src="https://ui-avatars.com/api/?name=Client+3&background=9AD000&color=fff" class="w-10 h-10 rounded-full border-2 border-brand-bg" alt="Client">
+                    </div>
+                    <div>
+                        <div class="flex text-brand-highlight text-lg">★★★★★</div>
+                        <p>Trusted by 100+ local businesses</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Visual (Interactive 3D representation via CSS) -->
+            <div class="relative hidden lg:block gs-reveal-right">
+                <div class="relative w-full aspect-square max-w-[600px] mx-auto perspective-1000">
+                    <!-- Abstract Dashboard Card 1 -->
+                    <div class="absolute top-[10%] right-[5%] w-[70%] h-[40%] glass-panel rounded-2xl p-6 transform rotate-y-[-15deg] rotate-x-[10deg] animate-[float_6s_ease-in-out_infinite]">
+                        <div class="flex justify-between items-center mb-4">
+                            <h4 class="font-bold text-sm">Traffic Growth</h4>
+                            <span class="text-brand-accent text-xs font-bold">+145%</span>
+                        </div>
+                        <div class="h-24 flex items-end gap-2 border-b border-white/10 pb-2">
+                            <div class="w-1/6 bg-brand-primary/40 h-[30%] rounded-t-sm"></div>
+                            <div class="w-1/6 bg-brand-primary/60 h-[45%] rounded-t-sm"></div>
+                            <div class="w-1/6 bg-brand-primary/80 h-[60%] rounded-t-sm"></div>
+                            <div class="w-1/6 bg-brand-secondary h-[85%] rounded-t-sm"></div>
+                            <div class="w-1/6 bg-brand-accent h-[100%] rounded-t-sm shadow-[0_0_15px_#9AD000]"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Abstract Dashboard Card 2 -->
+                    <div class="absolute bottom-[15%] left-[0%] w-[65%] glass-panel rounded-2xl p-6 transform rotate-y-[15deg] rotate-x-[-5deg] animate-[float_7s_ease-in-out_infinite_reverse]">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-12 h-12 rounded-full bg-brand-primary/20 flex items-center justify-center">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0A84FF" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm">Leads Generated</h4>
+                                <p class="text-2xl font-heading font-bold text-white">2,845</p>
+                            </div>
+                        </div>
+                        <div class="w-full bg-white/10 h-2 rounded-full overflow-hidden">
+                            <div class="bg-gradient-to-r from-brand-primary to-brand-secondary w-[85%] h-full rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="chart-row">
-          <i style="height:38%"></i><i style="height:62%"></i><i style="height:48%"></i>
-          <i style="height:78%"></i><i style="height:55%"></i><i style="height:90%"></i>
-          <i style="height:70%"></i><i style="height:100%"></i><i style="height:66%"></i>
+    </section>
+
+    <!-- Trust Bar Marquee -->
+    <section class="py-8 border-y border-white/5 bg-brand-section/50">
+        <div class="marquee-container">
+            <div class="marquee-content flex items-center gap-16 px-8">
+                <!-- Duplicate blocks for seamless loop -->
+                <div class="flex items-center gap-16">
+                    <span class="text-xl font-heading font-bold text-white/30">GOOGLE PARTNER</span>
+                    <span class="text-xl font-heading font-bold text-white/30">META BLUEPRINT</span>
+                    <span class="text-xl font-heading font-bold text-white/30">SHOPIFY EXPERTS</span>
+                    <span class="text-xl font-heading font-bold text-white/30">SEMRUSH CERTIFIED</span>
+                    <span class="text-xl font-heading font-bold text-white/30">AWWARDS NOMINEE</span>
+                </div>
+                <div class="flex items-center gap-16">
+                    <span class="text-xl font-heading font-bold text-white/30">GOOGLE PARTNER</span>
+                    <span class="text-xl font-heading font-bold text-white/30">META BLUEPRINT</span>
+                    <span class="text-xl font-heading font-bold text-white/30">SHOPIFY EXPERTS</span>
+                    <span class="text-xl font-heading font-bold text-white/30">SEMRUSH CERTIFIED</span>
+                    <span class="text-xl font-heading font-bold text-white/30">AWWARDS NOMINEE</span>
+                </div>
+            </div>
         </div>
-        <div class="dash-stats">
-          <div><b class="grad-text">+164%</b><span>Organic Traffic</span></div>
-          <div><b class="grad-text">3.8x</b><span>ROAS</span></div>
-          <div><b class="grad-text">–42%</b><span>Cost / Lead</span></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-32 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20 gs-reveal">
+                <h2 class="text-sm font-bold tracking-widest text-brand-secondary uppercase mb-3">Core Expertise</h2>
+                <h3 class="text-4xl md:text-5xl font-bold mb-6">Engineered for <span class="text-gradient">Growth</span></h3>
+                <p class="text-brand-muted max-w-2xl mx-auto">We don't just offer services; we build revenue engines. From pixel-perfect websites to ROI-driven campaigns, we cover the entire digital spectrum.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service Card 1 -->
+                <div class="glass-card p-8 rounded-2xl group gs-reveal">
+                    <div class="w-14 h-14 rounded-xl bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-primary/20 transition-all duration-500">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0A84FF" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Website Development</h4>
+                    <p class="text-brand-muted text-sm mb-6 leading-relaxed">Lightning-fast, SEO-optimized, and conversion-focused websites built on modern stacks (Next.js, React, WordPress).</p>
+                    <a href="#" class="inline-flex items-center text-sm font-bold text-brand-primary group-hover:text-white transition-colors">
+                        Explore Service <svg class="ml-2 w-4 h-4 group-hover:translate-x-2 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="glass-card p-8 rounded-2xl group gs-reveal" style="transition-delay: 100ms;">
+                    <div class="w-14 h-14 rounded-xl bg-brand-accent/10 border border-brand-accent/20 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-accent/20 transition-all duration-500">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#9AD000" stroke-width="2"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path><path d="M10 7v3l2 2"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Search Engine Optimization</h4>
+                    <p class="text-brand-muted text-sm mb-6 leading-relaxed">Dominate Google rankings with data-driven Technical SEO, Local SEO, and high-authority link building strategies.</p>
+                    <a href="#" class="inline-flex items-center text-sm font-bold text-brand-accent group-hover:text-white transition-colors">
+                        Explore Service <svg class="ml-2 w-4 h-4 group-hover:translate-x-2 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="glass-card p-8 rounded-2xl group gs-reveal" style="transition-delay: 200ms;">
+                    <div class="w-14 h-14 rounded-xl bg-brand-secondary/10 border border-brand-secondary/20 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-secondary/20 transition-all duration-500">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00C8FF" stroke-width="2"><path d="M12 20V10M18 20V4M6 20v-4"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Performance Marketing</h4>
+                    <p class="text-brand-muted text-sm mb-6 leading-relaxed">High-ROI Google Ads and Meta Ads campaigns designed to minimize CAC and maximize ROAS.</p>
+                    <a href="#" class="inline-flex items-center text-sm font-bold text-brand-secondary group-hover:text-white transition-colors">
+                        Explore Service <svg class="ml-2 w-4 h-4 group-hover:translate-x-2 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                </div>
+
+                <!-- Additional cards (Branding, Social Media, Automation) follow same pattern... -->
+                <div class="glass-card p-8 rounded-2xl group gs-reveal">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-500">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#A855F7" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Branding & Identity</h4>
+                    <p class="text-brand-muted text-sm mb-6 leading-relaxed">Create a premium, memorable brand identity that builds instant trust and separates you from local competitors.</p>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl group gs-reveal" style="transition-delay: 100ms;">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-500">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#EC4899" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Social Media Marketing</h4>
+                    <p class="text-brand-muted text-sm mb-6 leading-relaxed">Engaging content, community management, and viral video editing to build your loyal audience.</p>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl group gs-reveal" style="transition-delay: 200ms;">
+                    <div class="w-14 h-14 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-500">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">CRM & Automation</h4>
+                    <p class="text-brand-muted text-sm mb-6 leading-relaxed">Streamline your sales process with automated email sequences, lead nurturing, and WhatsApp integrations.</p>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="dash-card float-card float-1">
-        <div class="float-ico">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 17l6-6 4 4 8-8" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </section>
+
+    <!-- Why Choose Us / Process Section -->
+    <section id="process" class="py-32 bg-brand-section relative overflow-hidden">
+        <div class="absolute right-0 top-0 w-1/2 h-full bg-gradient-to-l from-brand-primary/5 to-transparent"></div>
+        
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div class="gs-reveal-left">
+                    <h2 class="text-sm font-bold tracking-widest text-brand-secondary uppercase mb-3">The DSL Advantage</h2>
+                    <h3 class="text-4xl md:text-5xl font-bold mb-6">Why Top Brands <br>Choose Us</h3>
+                    <p class="text-brand-muted mb-8 text-lg">We bridge the gap between creative design and analytical marketing. No fluff, just transparent strategies that impact your bottom line.</p>
+                    
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full bg-brand-highlight/20 flex items-center justify-center mt-1 flex-shrink-0">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFD500" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-lg mb-1">Result-Driven Focus</h5>
+                                <p class="text-sm text-brand-muted">We track metrics that matter: Leads, CPA, and Revenue, not just likes.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full bg-brand-primary/20 flex items-center justify-center mt-1 flex-shrink-0">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0A84FF" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-lg mb-1">Transparent Reporting</h5>
+                                <p class="text-sm text-brand-muted">Live dashboards so you always know exactly where your budget is going.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full bg-brand-accent/20 flex items-center justify-center mt-1 flex-shrink-0">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9AD000" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-lg mb-1">Latest Technology Stack</h5>
+                                <p class="text-sm text-brand-muted">We use Next.js, Headless CMS, and AI tools to keep you ahead of competitors.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Process Timeline -->
+                <div class="relative gs-reveal-right">
+                    <div class="absolute left-6 top-0 bottom-0 w-[2px] bg-white/10 rounded-full"></div>
+                    <div id="scroll-progress-line" class="absolute left-6 top-0 w-[2px] bg-gradient-to-b from-brand-primary to-brand-secondary h-0 rounded-full"></div>
+                    
+                    <div class="space-y-12 relative">
+                        <div class="flex gap-8 items-center process-step">
+                            <div class="w-12 h-12 rounded-full bg-brand-bg border-2 border-brand-primary z-10 flex items-center justify-center font-bold font-heading text-brand-primary shadow-[0_0_15px_rgba(10,132,255,0.4)]">1</div>
+                            <div class="glass-card p-6 rounded-2xl flex-1">
+                                <h4 class="font-bold text-xl mb-2">Discovery & Audit</h4>
+                                <p class="text-sm text-brand-muted">We analyze your current presence, competitors, and target audience.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-8 items-center process-step">
+                            <div class="w-12 h-12 rounded-full bg-brand-bg border-2 border-white/20 z-10 flex items-center justify-center font-bold font-heading">2</div>
+                            <div class="glass-card p-6 rounded-2xl flex-1">
+                                <h4 class="font-bold text-xl mb-2">Custom Strategy</h4>
+                                <p class="text-sm text-brand-muted">Crafting a bespoke roadmap tailored to your specific revenue goals.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-8 items-center process-step">
+                            <div class="w-12 h-12 rounded-full bg-brand-bg border-2 border-white/20 z-10 flex items-center justify-center font-bold font-heading">3</div>
+                            <div class="glass-card p-6 rounded-2xl flex-1">
+                                <h4 class="font-bold text-xl mb-2">Execution & Build</h4>
+                                <p class="text-sm text-brand-muted">Developing the website, launching campaigns, and creating content.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-8 items-center process-step">
+                            <div class="w-12 h-12 rounded-full bg-brand-bg border-2 border-white/20 z-10 flex items-center justify-center font-bold font-heading">4</div>
+                            <div class="glass-card p-6 rounded-2xl flex-1">
+                                <h4 class="font-bold text-xl mb-2">Scale & Optimize</h4>
+                                <p class="text-sm text-brand-muted">Continuous A/B testing and scaling winning strategies for maximum ROI.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div><b>#1 Rankings</b><span>Local SEO growth</span></div>
-      </div>
-      <div class="dash-card float-card float-2">
-        <div class="float-ico" style="background:var(--grad-3);">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.6 6.6L21 11l-6.4 2.4L12 20l-2.6-6.6L3 11l6.4-2.4L12 2z" stroke="#0A0A0A" stroke-width="1.8" stroke-linejoin="round"/></svg>
+    </section>
+
+    <!-- Statistics Section (Animated Counters) -->
+    <section class="py-20 border-y border-white/5 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="text-center gs-reveal">
+                <div class="text-5xl md:text-6xl font-heading font-bold text-white mb-2"><span class="counter" data-target="500">0</span>+</div>
+                <p class="text-brand-muted font-medium tracking-wide uppercase text-sm">Projects Delivered</p>
+            </div>
+            <div class="text-center gs-reveal" style="transition-delay: 100ms;">
+                <div class="text-5xl md:text-6xl font-heading font-bold text-brand-primary mb-2"><span class="counter" data-target="100">0</span>+</div>
+                <p class="text-brand-muted font-medium tracking-wide uppercase text-sm">Active Clients</p>
+            </div>
+            <div class="text-center gs-reveal" style="transition-delay: 200ms;">
+                <div class="text-5xl md:text-6xl font-heading font-bold text-brand-accent mb-2"><span class="counter" data-target="98">0</span>%</div>
+                <p class="text-brand-muted font-medium tracking-wide uppercase text-sm">Client Retention</p>
+            </div>
+            <div class="text-center gs-reveal" style="transition-delay: 300ms;">
+                <div class="text-5xl md:text-6xl font-heading font-bold text-brand-secondary mb-2"><span class="counter" data-target="5">0</span>M+</div>
+                <p class="text-brand-muted font-medium tracking-wide uppercase text-sm">Ad Spend Managed</p>
+            </div>
         </div>
-        <div><b>500+ Projects</b><span>Delivered on time</span></div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- TRUST BAR -->
-<section class="trust-bar">
-  <div class="container trust-inner reveal">
-    <p>Trusted by Businesses Across India</p>
-    <div class="trust-stats">
-      <div class="trust-stat"><b class="count" data-target="500">0</b><span>Projects Completed</span></div>
-      <div class="trust-stat"><b class="count" data-target="100">0</b><span>Happy Clients</span></div>
-      <div class="trust-stat"><b class="count" data-target="4.9" data-decimal="1">0</b><span>Google Rating</span></div>
-      <div class="trust-stat"><b class="count" data-target="8">0</b><span>Years Experience</span></div>
-      <div class="trust-stat"><b class="count" data-target="98">0</b><span>Success Rate %</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section class="section" id="services">
-  <div class="container">
-    <div class="section-head center reveal">
-      <span class="eyebrow" style="justify-content:center;">What We Do</span>
-      <h2>Full-funnel services built to <span class="grad-text">compound your growth</span></h2>
-      <p style="margin:0 auto;">Every service is built around one metric that matters: revenue. Strategy, design and performance marketing, under one roof.</p>
-    </div>
-    <div class="services-grid" id="servicesGrid"></div>
-  </div>
-</section>
-
-<!-- WHY CHOOSE -->
-<section class="section section-alt" id="about">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">Why DSL Creations</span>
-      <h2>Built for agencies that talk. <span class="grad-text">We build for results.</span></h2>
-      <p>Eight reasons growing businesses in Ludhiana and beyond choose DSL Creations as their long-term marketing partner.</p>
-    </div>
-    <div class="why-grid" id="whyGrid"></div>
-  </div>
-</section>
-
-<!-- PORTFOLIO -->
-<section class="section" id="portfolio">
-  <div class="container">
-    <div class="section-head center reveal">
-      <span class="eyebrow" style="justify-content:center;">Selected Work</span>
-      <h2>Real work, <span class="grad-text">real numbers</span></h2>
-      <p style="margin:0 auto;">A snapshot of websites, brand identities and campaigns we've shipped for clients across India.</p>
-    </div>
-    <div class="portfolio-grid" id="portfolioGrid"></div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section class="section section-alt" id="testimonials">
-  <div class="container">
-    <div class="section-head center reveal">
-      <span class="eyebrow" style="justify-content:center;">Client Love</span>
-      <h2>Don't take <span class="grad-text">our word for it</span></h2>
-    </div>
-    <div class="testi-wrap reveal">
-      <button class="testi-arrow left" id="testiPrev" aria-label="Previous testimonial">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
-      <div class="testi-track"><div class="testi-slides" id="testiSlides"></div></div>
-      <button class="testi-arrow right" id="testiNext" aria-label="Next testimonial">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
-      <div class="testi-nav" id="testiNav"></div>
-    </div>
-  </div>
-</section>
-
-<!-- PROCESS -->
-<section class="section">
-  <div class="container">
-    <div class="section-head center reveal">
-      <span class="eyebrow" style="justify-content:center;">How We Work</span>
-      <h2>A process built for <span class="grad-text">predictable growth</span></h2>
-    </div>
-    <div class="process-line reveal">
-      <div class="process-grid" id="processGrid"></div>
-    </div>
-  </div>
-</section>
-
-<!-- INDUSTRIES -->
-<section class="section section-alt">
-  <div class="container">
-    <div class="section-head center reveal">
-      <span class="eyebrow" style="justify-content:center;">Industries We Serve</span>
-      <h2>Strategy that adapts to <span class="grad-text">your industry</span></h2>
-    </div>
-    <div class="industries-grid" id="industriesGrid"></div>
-  </div>
-</section>
-
-<!-- STATS -->
-<section class="section">
-  <div class="container">
-    <div class="stats-band reveal">
-      <div class="stats-inner">
-        <div><b class="count" data-target="500">0</b><span>Projects</span></div>
-        <div><b class="count" data-target="100">0</b><span>Clients</span></div>
-        <div><b class="count" data-target="98">0</b><span>Client Satisfaction %</span></div>
-        <div><b class="count" data-target="10">0</b><span>Core Services</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="section section-alt">
-  <div class="container">
-    <div class="section-head center reveal">
-      <span class="eyebrow" style="justify-content:center;">FAQ</span>
-      <h2>Questions, <span class="grad-text">answered</span></h2>
-    </div>
-    <div class="faq-list" id="faqList"></div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="section">
-  <div class="container">
-    <div class="cta-band reveal">
-      <div class="blob blob1" style="width:340px;height:340px;top:-100px;left:-80px;"></div>
-      <div class="blob blob2" style="width:300px;height:300px;bottom:-100px;right:-60px;"></div>
-      <h2>Ready to Grow Your Business?</h2>
-      <p>Get a free proposal built around your goals — no pressure, no jargon, just a clear plan to grow.</p>
-      <div class="cta-actions">
-        <a href="tel:+918699111399" class="btn btn-primary">Call Now</a>
-        <a href="#contact" class="btn btn-ghost">Get Free Proposal</a>
-        <a href="https://wa.me/918699111399" target="_blank" rel="noopener" class="btn btn-outline">WhatsApp Us</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="section section-alt" id="contact">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">Get In Touch</span>
-      <h2>Let's build your <span class="grad-text">growth plan</span></h2>
-      <p>Tell us about your business — we'll get back within one business day with next steps.</p>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-info reveal">
-        <div class="info-row">
-          <div class="info-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 22s7-7.4 7-12.6A7 7 0 0 0 5 9.4C5 14.6 12 22 12 22z" stroke="#fff" stroke-width="1.8"/><circle cx="12" cy="9.4" r="2.4" stroke="#fff" stroke-width="1.8"/></svg></div>
-          <div><b>Office Address</b><span>Office No. 5, Paneshar Market, Overlock Road, Miller Ganj, Ludhiana, Punjab – 141003</span></div>
+    <!-- FAQ Section -->
+    <section class="py-32 max-w-4xl mx-auto px-6">
+        <div class="text-center mb-16 gs-reveal">
+            <h2 class="text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+            <p class="text-brand-muted">Everything you need to know about working with DSL Creations.</p>
         </div>
-        <div class="info-row">
-          <div class="info-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .7 3a2 2 0 0 1-.4 2.1L8 10a16 16 0 0 0 6 6l1.2-1.4a2 2 0 0 1 2.1-.4c1 .4 2 .6 3 .7a2 2 0 0 1 1.7 2z" stroke="#fff" stroke-width="1.8"/></svg></div>
-          <div><b>Phone</b><a href="tel:+918699111399">+91 86991 11399</a></div>
+
+        <div class="space-y-4 gs-reveal">
+            <!-- FAQ 1 -->
+            <div class="glass-card rounded-xl overflow-hidden accordion-item">
+                <button class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
+                    <span class="font-bold text-lg">Do you work with startups or only established brands?</span>
+                    <svg class="accordion-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                </button>
+                <div class="accordion-content px-6 bg-white/5">
+                    <p class="text-brand-muted text-sm">We work with ambitious businesses of all sizes. Whether you are a local Ludhiana startup needing a foundational website and local SEO, or a national brand looking to scale Meta Ads, we have scalable solutions.</p>
+                </div>
+            </div>
+            <!-- FAQ 2 -->
+            <div class="glass-card rounded-xl overflow-hidden accordion-item">
+                <button class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
+                    <span class="font-bold text-lg">How long does it take to see SEO results?</span>
+                    <svg class="accordion-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                </button>
+                <div class="accordion-content px-6 bg-white/5">
+                    <p class="text-brand-muted text-sm">SEO is a long-term game. Typically, you will start seeing initial movement in 3 to 6 months. However, we also implement short-term paid strategies (Google Ads) to get you immediate leads while the SEO builds momentum.</p>
+                </div>
+            </div>
+            <!-- FAQ 3 -->
+            <div class="glass-card rounded-xl overflow-hidden accordion-item">
+                <button class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
+                    <span class="font-bold text-lg">What makes DSL Creations different from other agencies?</span>
+                    <svg class="accordion-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                </button>
+                <div class="accordion-content px-6 bg-white/5">
+                    <p class="text-brand-muted text-sm">We don't use templates. We don't farm out work to cheap third parties. Every website is custom-designed for conversion, and every ad campaign is built purely on ROI metrics. We act as your fractional CMO.</p>
+                </div>
+            </div>
         </div>
-        <div class="info-row">
-          <div class="info-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 6h18v12H3z" stroke="#fff" stroke-width="1.8"/><path d="M3 7l9 6 9-6" stroke="#fff" stroke-width="1.8"/></svg></div>
-          <div><b>Email</b><a href="mailto:info@dslcreations.com">info@dslcreations.com</a></div>
+    </section>
+
+    <!-- Ultimate CTA Section -->
+    <section class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-brand-primary/10"></div>
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')]"></div>
+        
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10 gs-reveal">
+            <h2 class="text-5xl md:text-7xl font-bold mb-8">Ready to Dominate <br>Your Market?</h2>
+            <p class="text-xl text-brand-muted mb-10 max-w-2xl mx-auto">Stop losing customers to competitors with inferior products but better marketing. Let's build your growth engine today.</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="#contact" class="bg-brand-highlight text-black px-10 py-5 rounded-full font-bold text-lg hover:scale-105 transition-transform shadow-[0_0_30px_rgba(255,213,0,0.4)]">Get Your Free Audit</a>
+                <a href="https://wa.me/918699111399" target="_blank" class="glass-panel px-10 py-5 rounded-full font-bold text-lg hover:bg-white/10 transition-colors flex items-center justify-center gap-3">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    WhatsApp Us
+                </a>
+            </div>
         </div>
-        <div class="info-row">
-          <div class="info-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="1.8"/><path d="M12 7v5l3.5 2" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-          <div><b>Working Hours</b><span>Mon – Sat, 10:00 AM – 7:00 PM</span></div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-[#02050A] pt-24 pb-12 border-t border-white/10 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 mb-16">
+                <!-- Brand Col -->
+                <div class="lg:col-span-4">
+                    <span class="font-heading font-bold text-2xl tracking-tight mb-6 block">DSL<span class="text-brand-primary">Creations</span></span>
+                    <p class="text-brand-muted text-sm mb-8 leading-relaxed max-w-xs">Premium Digital Marketing Agency in Ludhiana. We craft digital experiences that elevate brands and multiply revenue.</p>
+                    
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand-primary transition-colors">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-pink-500 transition-colors">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-blue-400 transition-colors">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form Col -->
+                <div class="lg:col-span-8 glass-panel p-8 rounded-2xl">
+                    <h4 class="text-2xl font-bold mb-6">Send us a message</h4>
+                    <form id="contactForm" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-brand-muted mb-2">Full Name</label>
+                            <input type="text" required class="w-full bg-black/20 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-primary transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-brand-muted mb-2">Email Address</label>
+                            <input type="email" required class="w-full bg-black/20 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-primary transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-brand-muted mb-2">Phone Number</label>
+                            <input type="tel" required class="w-full bg-black/20 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-primary transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-brand-muted mb-2">Service Needed</label>
+                            <select class="w-full bg-black/20 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-primary transition-colors appearance-none">
+                                <option class="bg-brand-bg">Website Development</option>
+                                <option class="bg-brand-bg">SEO</option>
+                                <option class="bg-brand-bg">Google/Meta Ads</option>
+                                <option class="bg-brand-bg">Full Digital Marketing</option>
+                            </select>
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-medium text-brand-muted mb-2">Project Details</label>
+                            <textarea rows="4" class="w-full bg-black/20 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-primary transition-colors"></textarea>
+                        </div>
+                        <div class="md:col-span-2">
+                            <button type="submit" class="bg-brand-primary w-full text-white font-bold py-4 rounded-lg hover:bg-blue-600 transition-colors">Submit Request</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-brand-muted">
+                <p>&copy; 2026 DSL Creations. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <p class="flex items-center gap-2">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        Office No. 5, Paneshar Market, Miller Ganj, Ludhiana - 141003
+                    </p>
+                </div>
+            </div>
         </div>
-        <iframe class="map-frame" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=Paneshar+Market+Overlock+Road+Miller+Ganj+Ludhiana+Punjab+141003&output=embed"></iframe>
-      </div>
+    </footer>
 
-      <form class="contact-form reveal" id="leadForm">
-        <div class="form-row">
-          <div class="form-group"><label for="fname">Full Name</label><input id="fname" name="name" type="text" placeholder="Your name" required></div>
-          <div class="form-group"><label for="fphone">Phone</label><input id="fphone" name="phone" type="tel" placeholder="+91 " required></div>
-        </div>
-        <div class="form-row">
-          <div class="form-group"><label for="femail">Email</label><input id="femail" name="email" type="email" placeholder="you@company.com" required></div>
-          <div class="form-group"><label for="fbiz">Business Name</label><input id="fbiz" name="business" type="text" placeholder="Your business"></div>
-        </div>
-        <div class="form-group"><label for="fmsg">Message</label><textarea id="fmsg" name="message" placeholder="Tell us about your goals..."></textarea></div>
-        <button type="submit" class="btn btn-primary" style="width:100%;">Request Free Proposal</button>
-        <p class="form-note">We reply within one business day — no spam, ever.</p>
-      </form>
-    </div>
-  </div>
-</section>
+    <!-- GSAP & Lenis Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
 
-<!-- FOOTER -->
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="#home" class="logo"><span class="logo-mark">DSL</span> DSL Creations</a>
-        <p>A data-driven digital marketing agency in Ludhiana helping businesses turn websites, SEO and ads into predictable revenue.</p>
-        <div class="social-row">
-          <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="#fff" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="#fff" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1" fill="#fff"/></svg></a>
-          <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M14 9h3V6h-3a4 4 0 0 0-4 4v2H8v3h2v6h3v-6h3l1-3h-4v-2a1 1 0 0 1 1-1z" stroke="#fff" stroke-width="1.4" stroke-linejoin="round"/></svg></a>
-          <a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="#fff" stroke-width="1.6"/><path d="M8 10v6M8 7.5v.01M12 16v-4a2 2 0 0 1 4 0v4M12 12v4" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg></a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h5>Quick Links</h5>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Services</h5>
-        <ul>
-          <li><a href="#services">Website Development</a></li>
-          <li><a href="#services">SEO</a></li>
-          <li><a href="#services">Google Ads</a></li>
-          <li><a href="#services">Social Media Marketing</a></li>
-          <li><a href="#services">Branding</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Contact</h5>
-        <ul>
-          <li><a href="tel:+918699111399">+91 86991 11399</a></li>
-          <li><a href="mailto:info@dslcreations.com">info@dslcreations.com</a></li>
-          <li><a href="#contact">Office No. 5, Paneshar Market, Overlock Road, Miller Ganj, Ludhiana – 141003</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© <span id="year"></span> DSL Creations. All rights reserved.</p>
-      <div class="footer-legal">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Google Business</a>
-      </div>
-    </div>
-  </div>
-</footer>
+    <script>
+        // 1. Initial Loader
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            loader.style.opacity = '0';
+            setTimeout(() => {
+                loader.style.display = 'none';
+                initAnimations();
+            }, 800);
+        });
 
-<a href="https://wa.me/918699111399" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
-  <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M20 4A10 10 0 0 0 4.4 16.5L3 21l4.6-1.4A10 10 0 1 0 20 4z" stroke="#fff" stroke-width="1.6"/><path d="M8.5 8.7c.2-.5.4-.5.7-.5h.5c.2 0 .4 0 .6.5l.7 1.7c.1.2 0 .5-.1.6l-.5.6c-.1.2-.1.4 0 .6.4.8 1.6 2 2.4 2.4.2.1.4.1.6 0l.6-.5c.2-.1.4-.2.6-.1l1.7.7c.4.2.5.4.5.6v.5c0 .3 0 .5-.5.7-1.6.6-3.6-.2-5.4-2-1.8-1.8-2.6-3.8-2-5.4z" fill="#fff"/></svg>
-</a>
-<button class="back-top" id="backTop" aria-label="Back to top">
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-</button>
-<div class="sticky-cta">
-  <span>Grow your business today</span>
-  <a href="#contact" class="btn btn-primary btn-sm">Free Proposal</a>
-</div>
+        // 2. Custom Cursor Logic
+        const cursorDot = document.querySelector('.cursor-dot');
+        const cursorOutline = document.querySelector('.cursor-outline');
+        
+        window.addEventListener('mousemove', (e) => {
+            const posX = e.clientX;
+            const posY = e.clientY;
+            
+            cursorDot.style.left = `${posX}px`;
+            cursorDot.style.top = `${posY}px`;
+            
+            // Add slight delay to outline for smooth effect
+            setTimeout(() => {
+                cursorOutline.style.left = `${posX}px`;
+                cursorOutline.style.top = `${posY}px`;
+            }, 50);
+        });
 
-<script>
-/* ---------- DATA ---------- */
-const services = [
-  {t:"Website Development",d:"Fast, conversion-focused websites built on modern stacks — designed to turn visitors into customers.",icon:"code"},
-  {t:"SEO",d:"Rank higher, get found first. Technical, on-page and local SEO built for sustainable organic growth.",icon:"search"},
-  {t:"Google Ads",d:"High-intent search and shopping campaigns engineered for the lowest cost per qualified lead.",icon:"target"},
-  {t:"Meta Ads",d:"Facebook & Instagram campaigns that stop the scroll and convert — backed by constant testing.",icon:"heart"},
-  {t:"Branding",d:"Distinct visual identities — logos, guidelines and brand systems that make you memorable.",icon:"star"},
-  {t:"Graphic Design",d:"Premium creative for print, digital and social — every asset on-brand, every time.",icon:"layers"},
-  {t:"Social Media Marketing",d:"Content strategy, scheduling and community growth across every platform that matters.",icon:"share"},
-  {t:"Content Marketing",d:"SEO-driven content that builds authority and keeps your audience coming back.",icon:"pen"},
-  {t:"Lead Generation",d:"Funnels and landing pages engineered specifically to fill your pipeline, month after month.",icon:"funnel"},
-  {t:"Email Marketing",d:"Automated sequences and campaigns that nurture leads into loyal, repeat customers.",icon:"mail"},
-  {t:"Automation",d:"CRM and marketing automation that saves your team hours every single week.",icon:"bolt"},
-  {t:"Video Editing",d:"Scroll-stopping reels, ads and brand videos edited for maximum retention and reach.",icon:"play"}
-];
-const icons = {
-  code:'<path d="M8 9l-4 4 4 4M16 9l4 4-4 4M13 5l-2 16" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>',
-  search:'<circle cx="11" cy="11" r="7" stroke="#fff" stroke-width="1.8"/><path d="M21 21l-4.3-4.3" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>',
-  target:'<circle cx="12" cy="12" r="8" stroke="#fff" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="#fff" stroke-width="1.8"/><circle cx="12" cy="12" r="1" fill="#fff"/>',
-  heart:'<path d="M12 21s-7-4.4-9.5-9A5.5 5.5 0 0 1 12 6.4 5.5 5.5 0 0 1 21.5 12c-2.5 4.6-9.5 9-9.5 9z" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/>',
-  star:'<path d="M12 2l2.9 6.3 6.8.7-5.1 4.6 1.5 6.7L12 16.9 5.9 20.3l1.5-6.7L2.3 9l6.8-.7L12 2z" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>',
-  layers:'<path d="M12 3l9 5-9 5-9-5 9-5z" stroke="#fff" stroke-width="1.7" stroke-linejoin="round"/><path d="M3 13l9 5 9-5" stroke="#fff" stroke-width="1.7" stroke-linejoin="round"/>',
-  share:'<circle cx="6" cy="12" r="2.5" stroke="#fff" stroke-width="1.7"/><circle cx="18" cy="6" r="2.5" stroke="#fff" stroke-width="1.7"/><circle cx="18" cy="18" r="2.5" stroke="#fff" stroke-width="1.7"/><path d="M8.2 10.8L15.8 7.2M8.2 13.2l7.6 3.6" stroke="#fff" stroke-width="1.7"/>',
-  pen:'<path d="M4 20l4-1 11-11-3-3L5 16l-1 4z" stroke="#fff" stroke-width="1.7" stroke-linejoin="round"/>',
-  funnel:'<path d="M4 4h16l-6 8v6l-4 2v-8L4 4z" stroke="#fff" stroke-width="1.7" stroke-linejoin="round"/>',
-  mail:'<rect x="3" y="5" width="18" height="14" rx="2" stroke="#fff" stroke-width="1.7"/><path d="M3 7l9 6 9-6" stroke="#fff" stroke-width="1.7"/>',
-  bolt:'<path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>',
-  play:'<circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="1.7"/><path d="M10 8.5l6 3.5-6 3.5v-7z" fill="#fff"/>'
-};
-document.getElementById('servicesGrid').innerHTML = services.map(s=>`
-  <div class="s-card reveal">
-    <div class="s-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none">${icons[s.icon]}</svg></div>
-    <h3>${s.t}</h3>
-    <p>${s.d}</p>
-    <a href="#contact" class="s-link">Learn more
-      <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </a>
-  </div>`).join('');
+        // 3. Smooth Scrolling (Lenis)
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            direction: 'vertical',
+            gestureDirection: 'vertical',
+            smooth: true,
+            mouseMultiplier: 1,
+            smoothTouch: false,
+            touchMultiplier: 2,
+            infinite: false,
+        });
 
-const why = [
-  {t:"Result Driven",d:"Every campaign is tied to a number that matters — leads, sales or revenue."},
-  {t:"Creative Strategy",d:"Bold ideas grounded in data, not guesswork or trends for their own sake."},
-  {t:"Dedicated Support",d:"A real account manager who knows your business, always a message away."},
-  {t:"Affordable Pricing",d:"Enterprise-grade marketing, priced for growing businesses."},
-  {t:"Latest Technology",d:"AI-assisted tools and modern platforms that keep you ahead of competitors."},
-  {t:"Transparent Reporting",d:"Clear monthly dashboards — you always know exactly where your money goes."},
-  {t:"Expert Team",d:"Specialists in SEO, ads, design and development, not generalists."},
-  {t:"Fast Delivery",d:"Streamlined workflows mean your projects launch on time, every time."}
-];
-document.getElementById('whyGrid').innerHTML = why.map((w,i)=>`
-  <div class="why-card reveal">
-    <div class="why-num">0${i+1}</div>
-    <h4>${w.t}</h4>
-    <p>${w.d}</p>
-  </div>`).join('');
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
 
-const portfolio = [
-  {cat:"Website Project",title:"E-commerce Rebuild — Fashion Retailer",g:"var(--grad-1)"},
-  {cat:"Brand Identity",title:"Full Rebrand — Real Estate Group",g:"var(--grad-2)"},
-  {cat:"SEO Results",title:"164% Organic Growth — Healthcare Clinic",g:"var(--grad-3)"},
-  {cat:"Social Media",title:"Community Growth — Restaurant Chain",g:"var(--grad-1)"},
-  {cat:"Google Ads",title:"3.8x ROAS — D2C Ecommerce Brand",g:"var(--grad-2)"},
-  {cat:"Website Project",title:"Corporate Site — Manufacturing Co.",g:"var(--grad-3)"}
-];
-document.getElementById('portfolioGrid').innerHTML = portfolio.map(p=>`
-  <div class="p-card reveal">
-    <div class="p-media" style="background:${p.g};opacity:.9;">
-      <span class="p-glyph">DSL</span>
-    </div>
-    <div class="p-body">
-      <span class="p-cat">${p.cat}</span>
-      <h3>${p.title}</h3>
-      <a href="#contact" class="p-btn">View Project
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-    </div>
-  </div>`).join('');
+        // 4. GSAP Animations & ScrollTrigger Setup
+        gsap.registerPlugin(ScrollTrigger);
 
-const testimonials = [
-  {q:"DSL Creations rebuilt our website and doubled our monthly leads within two months. Their reporting is refreshingly transparent.",n:"Amanpreet Singh",c:"Founder, Singh Interiors",i:"A"},
-  {q:"Our Google Ads cost per lead dropped by 40% after DSL took over. They actually understand our business, not just ad platforms.",n:"Rajni Kapoor",c:"Marketing Head, Kapoor Textiles",i:"R"},
-  {q:"From branding to SEO, DSL Creations feels like an in-house team. Professional, fast, and genuinely invested in our growth.",n:"Karan Mehta",c:"CEO, Mehta Healthcare Group",i:"K"}
-];
-document.getElementById('testiSlides').innerHTML = testimonials.map(t=>`
-  <div class="testi-slide">
-    <div class="t-card">
-      <div class="t-stars">★★★★★</div>
-      <p class="t-quote">"${t.q}"</p>
-      <div class="t-person">
-        <div class="t-avatar">${t.i}</div>
-        <div><b>${t.n}</b><span>${t.c}</span></div>
-      </div>
-    </div>
-  </div>`).join('');
-document.getElementById('testiNav').innerHTML = testimonials.map((_,i)=>`<button data-i="${i}" class="${i===0?'active':''}"></button>`).join('');
+        function initAnimations() {
+            // Header Scroll Effect
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', () => {
+                if(window.scrollY > 50) {
+                    header.classList.add('backdrop-blur-md', 'bg-brand-bg/80');
+                    header.classList.remove('py-4');
+                    header.classList.add('py-2');
+                } else {
+                    header.classList.remove('backdrop-blur-md', 'bg-brand-bg/80');
+                    header.classList.remove('py-2');
+                    header.classList.add('py-4');
+                }
+            });
 
-const process = [
-  {t:"Discovery",d:"We learn your business, audience and goals."},
-  {t:"Strategy",d:"A custom growth roadmap, built around real data."},
-  {t:"Design",d:"Premium creative that reflects your brand."},
-  {t:"Development",d:"Fast, scalable builds on modern technology."},
-  {t:"Marketing",d:"SEO, ads and content go live, tracked from day one."},
-  {t:"Growth",d:"Ongoing optimisation for compounding results."}
-];
-document.getElementById('processGrid').innerHTML = process.map((p,i)=>`
-  <div class="proc-step reveal">
-    <div class="proc-dot">${i+1}</div>
-    <h4>${p.t}</h4>
-    <p>${p.d}</p>
-  </div>`).join('');
+            // Standard Reveal Up
+            gsap.utils.toArray('.gs-reveal').forEach(function(elem) {
+                gsap.fromTo(elem, 
+                    { y: 50, opacity: 0 }, 
+                    { 
+                        y: 0, 
+                        opacity: 1, 
+                        duration: 1, 
+                        ease: "power3.out",
+                        scrollTrigger: {
+                            trigger: elem,
+                            start: "top 85%",
+                            toggleActions: "play none none reverse"
+                        }
+                    }
+                );
+            });
 
-const industries = ["Healthcare","Education","Real Estate","Manufacturing","Restaurants","Ecommerce","Startups","Fashion","Finance","Personal Brands"];
-document.getElementById('industriesGrid').innerHTML = industries.map(i=>`<div class="ind-chip reveal">${i}</div>`).join('');
+            // Reveal Left
+            gsap.utils.toArray('.gs-reveal-left').forEach(function(elem) {
+                gsap.fromTo(elem, 
+                    { x: -50, opacity: 0 }, 
+                    { x: 0, opacity: 1, duration: 1, ease: "power3.out", scrollTrigger: { trigger: elem, start: "top 80%" }}
+                );
+            });
 
-const faqs = [
-  {q:"How much does digital marketing cost with DSL Creations?",a:"Pricing depends on your goals and chosen services. We build custom packages after understanding your business — book a free consultation for an exact quote."},
-  {q:"How long until I see results from SEO?",a:"Most clients start seeing meaningful ranking and traffic improvements within 3–4 months, with compounding growth after 6 months of consistent work."},
-  {q:"Do you work with businesses outside Ludhiana?",a:"Yes. While we're based in Ludhiana, we work with clients across India and internationally, all managed remotely with the same level of care."},
-  {q:"Can you redesign my existing website?",a:"Absolutely — we regularly rebuild and modernise existing websites for better speed, design and conversion rates without losing your SEO equity."},
-  {q:"What platforms do you run ads on?",a:"We run and manage campaigns on Google Ads, Meta (Facebook & Instagram), and other platforms suited to your audience and goals."},
-  {q:"Will I get monthly reports?",a:"Yes — every client receives clear, jargon-free monthly reports showing exactly what was done and the results it drove."},
-  {q:"Do you offer website maintenance after launch?",a:"Yes, we offer ongoing maintenance, security updates and support packages to keep your site fast and secure."},
-  {q:"How soon can we get started?",a:"Most projects kick off within a week of our discovery call, depending on scope and current workload."},
-  {q:"Is there a minimum contract period?",a:"We recommend a minimum 3-month engagement for marketing services to allow strategies time to show measurable results."},
-  {q:"How do I get a free consultation?",a:"Simply fill out the contact form, call us, or message us on WhatsApp — we'll schedule a free strategy call at your convenience."}
-];
-document.getElementById('faqList').innerHTML = faqs.map((f,i)=>`
-  <div class="faq-item reveal ${i===0?'open':''}">
-    <button class="faq-q">${f.q}<span class="plus"></span></button>
-    <div class="faq-a" style="${i===0?'max-height:200px':''}"><p>${f.a}</p></div>
-  </div>`).join('');
+            // Reveal Right
+            gsap.utils.toArray('.gs-reveal-right').forEach(function(elem) {
+                gsap.fromTo(elem, 
+                    { x: 50, opacity: 0 }, 
+                    { x: 0, opacity: 1, duration: 1, ease: "power3.out", scrollTrigger: { trigger: elem, start: "top 80%" }}
+                );
+            });
 
-/* ---------- SCRIPT BEHAVIOUR ---------- */
-window.addEventListener('load',()=>{document.getElementById('loader').classList.add('hide');});
+            // Process Timeline Progress Bar
+            gsap.to("#scroll-progress-line", {
+                height: "100%",
+                ease: "none",
+                scrollTrigger: {
+                    trigger: "#process",
+                    start: "top center",
+                    end: "bottom center",
+                    scrub: true
+                }
+            });
 
-// header scroll state
-const header = document.getElementById('siteHeader');
-const backTop = document.getElementById('backTop');
-window.addEventListener('scroll',()=>{
-  header.classList.toggle('scrolled', window.scrollY>30);
-  backTop.classList.toggle('show', window.scrollY>600);
-});
-backTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+            // Animated Counters
+            const counters = document.querySelectorAll('.counter');
+            counters.forEach(counter => {
+                ScrollTrigger.create({
+                    trigger: counter,
+                    start: "top 90%",
+                    once: true,
+                    onEnter: () => {
+                        const target = +counter.getAttribute('data-target');
+                        const duration = 2000; // ms
+                        const step = target / (duration / 16); // 60fps
+                        let current = 0;
+                        
+                        const updateCounter = () => {
+                            current += step;
+                            if(current < target) {
+                                counter.innerText = Math.ceil(current);
+                                requestAnimationFrame(updateCounter);
+                            } else {
+                                counter.innerText = target;
+                            }
+                        };
+                        updateCounter();
+                    }
+                });
+            });
+        }
 
-// mobile menu
-const burger=document.getElementById('burgerBtn'), menu=document.getElementById('mobileMenu'), close=document.getElementById('mobileClose');
-burger.addEventListener('click',()=>menu.classList.add('open'));
-close.addEventListener('click',()=>menu.classList.remove('open'));
-menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+        // 5. FAQ Accordion Logic
+        const accordionItems = document.querySelectorAll('.accordion-item');
+        accordionItems.forEach(item => {
+            const button = item.querySelector('button');
+            button.addEventListener('click', () => {
+                const isActive = item.classList.contains('accordion-active');
+                
+                // Close all
+                accordionItems.forEach(i => i.classList.remove('accordion-active'));
+                
+                // Open clicked if it wasn't already open
+                if(!isActive) {
+                    item.classList.add('accordion-active');
+                }
+            });
+        });
 
-// reveal on scroll
-const io = new IntersectionObserver((entries)=>{
-  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
-},{threshold:.15});
-document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-
-// counters
-const counted = new Set();
-const cio = new IntersectionObserver((entries)=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting && !counted.has(e.target)){
-      counted.add(e.target);
-      const el = e.target;
-      const target = parseFloat(el.dataset.target);
-      const decimals = parseInt(el.dataset.decimal||0);
-      const dur = 1600; const start = performance.now();
-      function tick(now){
-        const p = Math.min((now-start)/dur,1);
-        const eased = 1 - Math.pow(1-p,3);
-        el.textContent = (target*eased).toFixed(decimals);
-        if(p<1) requestAnimationFrame(tick);
-      }
-      requestAnimationFrame(tick);
-    }
-  });
-},{threshold:.4});
-document.querySelectorAll('.count').forEach(el=>cio.observe(el));
-
-// testimonial carousel
-let ti=0;
-const slidesEl = document.getElementById('testiSlides');
-const navBtns = ()=>document.querySelectorAll('#testiNav button');
-function goTo(i){
-  ti = (i+testimonials.length)%testimonials.length;
-  slidesEl.style.transform = `translateX(-${ti*100}%)`;
-  navBtns().forEach((b,idx)=>b.classList.toggle('active',idx===ti));
-}
-document.getElementById('testiNext').addEventListener('click',()=>goTo(ti+1));
-document.getElementById('testiPrev').addEventListener('click',()=>goTo(ti-1));
-document.getElementById('testiNav').addEventListener('click',(e)=>{
-  if(e.target.dataset.i!==undefined) goTo(parseInt(e.target.dataset.i));
-});
-setInterval(()=>goTo(ti+1),6000);
-
-// faq accordion
-document.getElementById('faqList').addEventListener('click',(e)=>{
-  const btn = e.target.closest('.faq-q');
-  if(!btn) return;
-  const item = btn.parentElement;
-  const answer = item.querySelector('.faq-a');
-  const isOpen = item.classList.contains('open');
-  document.querySelectorAll('.faq-item.open').forEach(o=>{
-    o.classList.remove('open');
-    o.querySelector('.faq-a').style.maxHeight = 0;
-  });
-  if(!isOpen){
-    item.classList.add('open');
-    answer.style.maxHeight = answer.scrollHeight + 'px';
-  }
-});
-
-// form submit -> whatsapp handoff (no backend configured)
-document.getElementById('leadForm').addEventListener('submit',(e)=>{
-  e.preventDefault();
-  const f = e.target;
-  const msg = `Hi DSL Creations, I'm ${f.name.value} from ${f.business.value||'my business'}. Phone: ${f.phone.value}. Email: ${f.email.value}. ${f.message.value}`;
-  window.open(`https://wa.me/918699111399?text=${encodeURIComponent(msg)}`,'_blank');
-});
-
-document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+        // 6. Form Submission (Prevent Default for Demo)
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = e.target.querySelector('button[type="submit"]');
+            const originalText = btn.innerText;
+            btn.innerText = "Sending...";
+            btn.classList.add('bg-brand-accent');
+            
+            setTimeout(() => {
+                btn.innerText = "Request Received!";
+                btn.classList.replace('bg-brand-primary', 'bg-brand-accent');
+                e.target.reset();
+                
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.classList.replace('bg-brand-accent', 'bg-brand-primary');
+                }, 3000);
+            }, 1500);
+        });
+    </script>
 </body>
 </html>
